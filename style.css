@@ -899,6 +899,38 @@ video {
   outline-offset: 2px;
 }
 
+.transition{
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-75{
+  transition-duration: 75ms;
+}
+
+.hover\:bg-stone-900:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 25 23 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-stone-400:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 162 158 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-stone-700:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 64 60 / var(--tw-bg-opacity));
+}
+
+.hover\:text-pink:hover{
+  --tw-text-opacity: 1;
+  color: rgb(238 3 130 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px){
   .sm\:block{
     display: block;
@@ -944,6 +976,10 @@ video {
 
   .md\:-mt-9{
     margin-top: -2.25rem;
+  }
+
+  .md\:mr-auto{
+    margin-right: auto;
   }
 
   .md\:block{
